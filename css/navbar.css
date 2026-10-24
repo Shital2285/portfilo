@@ -1,0 +1,32 @@
+nav.navbar {
+  min-height: 5.5rem;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+nav.navbar .navbar-brand {
+  font-size: 1.45rem;
+}
+
+nav.navbar .navbar-nav .nav-link {
+  padding: 0.55rem 0.8rem;
+  font-size: 0.98rem;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  nav.navbar .navbar-nav .nav-link {
+    padding-right: 0.45rem;
+    padding-left: 0.45rem;
+    font-size: 0.88rem;
+  }
+}
+
+@media (max-width: 399.98px) {
+  nav.navbar {
+    min-height: 5rem;
+  }
+
+  nav.navbar .navbar-brand {
+    font-size: 1.25rem;
+  }
+}

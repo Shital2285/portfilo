@@ -1,0 +1,29 @@
+.certifications-page .text-gradient {
+  background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.certifications-page .bg-gradient-primary-to-secondary {
+  background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%) !important;
+}
+
+.certifications-page .navbar-brand,
+.certifications-page .navbar-brand:hover,
+.certifications-page .navbar-brand:focus {
+  color: #18377c;
+}
+
+.certifications-page .navbar-brand .text-primary {
+  background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.certifications-page .navbar-nav .nav-link.active {
+  border-radius: 50rem;
+  background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
+  color: #fff;
+}

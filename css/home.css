@@ -1,0 +1,360 @@
+.home-page {
+  --home-blue: #1e30f3;
+  --home-blue-dark: #242d75;
+  --home-pink: #e21e80;
+  background: #f8f9ff;
+}
+
+.home-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: var(--home-blue-dark) !important;
+  font-family: Georgia, serif;
+  font-style: italic;
+  white-space: nowrap;
+}
+
+.home-brand i {
+  color: var(--home-pink);
+  font-size: 1.5rem;
+}
+
+.home-page .navbar {
+  background: #fff !important;
+}
+
+.home-page .navbar-nav .nav-link {
+  color: #343c62;
+}
+
+.home-page .navbar-nav .nav-link.active {
+  border-radius: 50rem;
+  background: linear-gradient(135deg, var(--home-blue) 0%, var(--home-pink) 100%);
+  color: #fff;
+}
+
+.home-nav-download {
+  flex-shrink: 0;
+  border: 0;
+  border-radius: 50rem;
+  background: linear-gradient(135deg, var(--home-blue) 0%, var(--home-pink) 100%) !important;
+  font-size: 0.9rem;
+  padding: 0.65rem 1rem;
+}
+
+.home-hero {
+  display: flex;
+  min-height: calc(100svh - 5.5rem);
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: clamp(1.5rem, 4vh, 3rem) 0;
+  background:
+    radial-gradient(ellipse at 3% 48%, rgba(220, 226, 255, 0.78) 0 16%, transparent 16.5%),
+    radial-gradient(ellipse at 100% 42%, rgba(255, 222, 239, 0.75) 0 16%, transparent 16.5%),
+    linear-gradient(115deg, #fcfcff 0%, #f4f5ff 55%, #fff7fb 100%);
+}
+
+.home-hero > .container {
+  position: relative;
+  z-index: 1;
+}
+
+.home-hero > .container > .row {
+  width: 100%;
+}
+
+.home-portrait {
+  position: relative;
+  width: min(100%, 22rem);
+  aspect-ratio: 0.88;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 48% 52% 48% 42%;
+  background: #e8eaff;
+  box-shadow: 0 0 0 0.75rem rgba(226, 228, 255, 0.72);
+}
+
+.home-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 18%;
+  mix-blend-mode: multiply;
+}
+
+.home-portrait-leaf {
+  position: absolute;
+  z-index: 1;
+  color: var(--home-pink);
+  font-size: 2rem;
+}
+
+.home-portrait-leaf-one {
+  bottom: 1.1rem;
+  left: 0.2rem;
+  transform: rotate(-48deg);
+}
+
+.home-portrait-leaf-two {
+  bottom: 2.6rem;
+  left: 0;
+  font-size: 1.45rem;
+  transform: rotate(-24deg);
+}
+
+.home-intro {
+  max-width: 37rem;
+  margin: 0 auto;
+  color: #333b68;
+}
+
+.home-hello {
+  margin-bottom: 0;
+  color: var(--home-blue);
+  font-family: Georgia, serif;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.home-intro h1 {
+  margin-bottom: 0.25rem;
+  color: var(--home-blue-dark);
+  font-size: clamp(2.5rem, 5vw, 3.8rem);
+  font-weight: 800;
+  line-height: 1.08;
+}
+
+.home-intro h1 span {
+  background: linear-gradient(135deg, var(--home-blue) 0%, var(--home-pink) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home-role {
+  margin-bottom: 0.8rem;
+  color: #4b5071;
+  font-size: 1.1rem;
+}
+
+.home-role span {
+  padding: 0 0.16rem;
+  color: var(--home-pink);
+}
+
+.home-summary {
+  margin-bottom: 1rem;
+  color: #505571;
+  font-size: 1.12rem;
+  line-height: 1.7;
+}
+
+.home-actions .btn {
+  padding: 0.7rem 1.2rem;
+  border-radius: 50rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.home-actions .btn-primary {
+  border-color: var(--home-blue);
+  background: linear-gradient(135deg, var(--home-blue) 0%, var(--home-pink) 100%);
+}
+
+.home-actions .btn-primary:hover {
+  border-color: var(--home-pink);
+  background: linear-gradient(135deg, #1725c7 0%, #bf1268 100%);
+}
+
+.home-actions .btn-outline-primary {
+  border-color: var(--home-blue);
+  color: var(--home-blue);
+}
+
+.home-actions .btn-outline-primary:hover {
+  border-color: var(--home-pink);
+  background: linear-gradient(135deg, var(--home-blue) 0%, var(--home-pink) 100%);
+  color: #fff;
+}
+
+.home-workspace {
+  position: relative;
+  min-height: 19rem;
+}
+
+.home-motto {
+  position: absolute;
+  top: 0.2rem;
+  right: 0.35rem;
+  z-index: 1;
+  margin: 0;
+  color: var(--home-blue-dark);
+  font-family: Georgia, serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.2;
+  transform: rotate(-9deg);
+}
+
+.home-motto span {
+  display: inline-block;
+  color: var(--home-pink);
+  font-size: 1.3rem;
+  transform: rotate(25deg);
+}
+
+.home-books {
+  position: absolute;
+  right: 0;
+  bottom: 3.15rem;
+  width: 7rem;
+  height: 4.4rem;
+}
+
+.home-book {
+  position: absolute;
+  right: 0;
+  width: 6.7rem;
+  height: 1.05rem;
+  border: 1px solid rgba(16, 68, 47, 0.25);
+  border-radius: 0.15rem 0.35rem 0.35rem 0.15rem;
+  box-shadow: 0 0.2rem 0.3rem rgba(16, 68, 47, 0.12);
+}
+
+.home-book-one {
+  bottom: 0;
+  background: #d4ad73;
+}
+
+.home-book-two {
+  right: 0.35rem;
+  bottom: 1.1rem;
+  background: #659b8e;
+}
+
+.home-book-three {
+  right: 0.7rem;
+  bottom: 2.2rem;
+  background: #e7d7b2;
+}
+
+.home-laptop {
+  position: absolute;
+  bottom: 2.6rem;
+  left: 0;
+  width: 9rem;
+  transform: rotate(-7deg);
+}
+
+.home-laptop-screen {
+  display: flex;
+  height: 5.25rem;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 0.7rem;
+  border: 0.35rem solid #263e3d;
+  border-radius: 0.45rem 0.45rem 0.2rem 0.2rem;
+  background: #18313b;
+  box-shadow: 0 0.35rem 0.6rem rgba(20, 52, 44, 0.2);
+}
+
+.home-laptop-screen span {
+  color: #8de0b4;
+  font-family: Consolas, monospace;
+  font-size: 0.56rem;
+}
+
+.home-laptop-screen span:nth-child(2) {
+  color: #d5b5fa;
+}
+
+.home-laptop-screen span:nth-child(3) {
+  color: #9ec8f2;
+}
+
+.home-laptop-base {
+  width: 10rem;
+  height: 0.42rem;
+  margin-left: -0.5rem;
+  border-radius: 0 0 0.6rem 0.6rem;
+  background: linear-gradient(180deg, #bdc8bf, #71877e);
+}
+
+.home-page .legacy-home-header {
+  display: none;
+}
+
+.home-page .navbar-brand .text-primary {
+  color: var(--home-blue-dark) !important;
+}
+
+.home-page footer {
+  display: none;
+}
+
+@media (max-width: 991.98px) {
+  .home-page .navbar-collapse {
+    padding-top: 0.75rem;
+  }
+
+  .home-nav-download {
+    margin: 0.35rem 0 0.5rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .home-hero {
+    min-height: calc(100svh - 5.5rem);
+    padding: 2.5rem 0 2rem;
+  }
+
+  .home-portrait {
+    width: min(78vw, 19rem);
+  }
+
+  .home-intro {
+    text-align: center;
+  }
+
+  .home-actions {
+    justify-content: center;
+  }
+
+  .home-workspace {
+    min-height: 15rem;
+    max-width: 18rem;
+    margin: 0 auto;
+  }
+
+  .home-books {
+    right: 0.5rem;
+    bottom: 2.1rem;
+  }
+
+  .home-laptop {
+    bottom: 2rem;
+    left: 0.5rem;
+  }
+}
+
+@media (max-width: 399.98px) {
+  .home-intro h1 {
+    font-size: 2.25rem;
+  }
+
+  .home-role {
+    font-size: 0.94rem;
+  }
+
+  .home-summary {
+    font-size: 1.05rem;
+  }
+
+  .home-actions .btn {
+    font-size: 0.86rem;
+  }
+}

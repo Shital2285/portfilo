@@ -1,0 +1,109 @@
+.resume-container {
+  max-width: 1320px;
+}
+
+.resume-content {
+  max-width: 1140px;
+}
+
+.resume-content p,
+.resume-content li,
+.resume-content .card-body > div {
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.resume-content .card-body {
+  padding: clamp(1.25rem, 3vw, 3rem) !important;
+}
+
+.resume-content h2 {
+  line-height: 1.25;
+}
+
+.resume-content h3 {
+  line-height: 1.4;
+}
+
+@media (max-width: 575.98px) {
+  .resume-heading h1 {
+    font-size: 2rem;
+  }
+}
+
+@page {
+  size: A4;
+  margin: 12mm;
+}
+
+@media print {
+  .resume-page,
+  .resume-page main {
+    background: #fff !important;
+  }
+
+  .resume-page nav,
+  .resume-page footer,
+  .resume-page .resume-download {
+    display: none !important;
+  }
+
+  .resume-page .resume-container {
+    max-width: none;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .resume-page .resume-content {
+    max-width: none;
+    padding: 0;
+  }
+
+  .resume-page .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .resume-page .resume-heading {
+    margin-bottom: 0.75rem !important;
+  }
+
+  .resume-page .resume-content section {
+    margin-bottom: 1rem !important;
+  }
+
+  .resume-page .resume-content .card-body {
+    padding: 0.75rem 1rem !important;
+  }
+
+  .resume-page .resume-content h2 {
+    margin-bottom: 0.5rem !important;
+  }
+
+  .resume-page .resume-content .mb-4 {
+    margin-bottom: 0.75rem !important;
+  }
+
+  .resume-page .card {
+    box-shadow: none !important;
+    border: 1px solid #dee2e6 !important;
+    break-inside: avoid;
+  }
+
+  .resume-page section,
+  .resume-page h2,
+  .resume-page h3,
+  .resume-page li {
+    break-inside: avoid;
+  }
+
+  .resume-page .text-gradient {
+    color: #1e30f3 !important;
+    -webkit-text-fill-color: #1e30f3;
+  }
+
+  .resume-page a {
+    color: #212529;
+    text-decoration: none;
+  }
+}
